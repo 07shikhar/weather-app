@@ -56,8 +56,9 @@ button{
 #message-1{
     color: green;
     font-weight: bold;
+    padding: 10px;
 }
 
 #message-2{
-    color: green;
+    color: black;
 }

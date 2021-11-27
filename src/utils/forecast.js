@@ -17,7 +17,7 @@ forecast = (lat, lon, callback) =>{
         }
         else{
             const rBdy = response.body.current
-            callback(undefined, 'The temperature is ' + rBdy.temperature + 'C feels like ' + rBdy.feelslike + 'C')
+            callback(undefined, 'The Temperature is ' + rBdy.temperature + '°C feels like ' + rBdy.feelslike + '°C ')
 
         }
     
