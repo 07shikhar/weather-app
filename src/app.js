@@ -24,20 +24,20 @@ hbs.registerPartials(partialPath)//path for partials
 app.get('',(req,res)=>{
     res.render('index',{
         title: 'Weather App',
-        name: 'Shikhar'
+        name: 'Shikhar Sharma'
     })
 })
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: 'About',
-        name:'Shikhar'
+        name:'Shikhar Sharma'
     })
 })
 app.get('/help', (req, res)=>{
     res.render('help',{
         title: 'Help',
         message: 'How may I help you!!',
-        name: 'Shikhar'
+        name: 'Shikhar Sharma'
     })
 })
 
