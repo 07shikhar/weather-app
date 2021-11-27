@@ -11,6 +11,8 @@ const viewsPath = path.join(__dirname, '../templates/views')//path for the chang
 const partialPath = path.join(__dirname,'../templates/partials')
 
 const app = express()
+const port = process.env.PORT || 3000
+
 app.use(express.static(publicDirectoryPath)) //static ditrectory that gonna make up for all our websites. It will load index.html at localhost:3000/index.html
 
 app.set('view engine', 'hbs')
@@ -84,6 +86,6 @@ app.get('*', (req, res)=>{ //must come at the end. * is for any route except men
         name: 'Shikhar'
     })
 })
-app.listen(3000,()=>{
-    console.log('Server is running')
+app.listen(port,()=>{
+    console.log('Server is running on ' + port)
 })
